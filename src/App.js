@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
+import {Router} from "react-router-dom";
+import Routes from "./Routes";
+import createHistory from 'history/createBrowserHistory';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import dotenv from 'dotenv';
+import dotenvExpand  from 'dotenv-expand';
+
+const myEnv = dotenv.config();
+dotenvExpand(myEnv);
+
+const history = createHistory();
 
 class App extends Component {
   render() {
@@ -20,6 +30,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Router history={history}>
+          <Routes />
+        </Router>
       </div>
     );
   }
