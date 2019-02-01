@@ -4,6 +4,7 @@ import logoAlt from './logo-alt.svg';
 
 export const themes = {
     default: {
+      spinnerColor: variables.spinnerColor,
       headerBackgroundColor: variables.headerBackgroundColor,
       headerForeColor: variables.headerForeColor,
       mainBackgroundColor: variables.mainBackgroundColor,
@@ -13,6 +14,7 @@ export const themes = {
       logo
     },
     alternative: {
+      spinnerColor: variables.spinnerColorAlt,
       headerBackgroundColor: variables.headerBackgroundColorAlt,
       headerForeColor: variables.headerForeColorAlt,
       mainBackgroundColor: variables.mainBackgroundColorAlt,

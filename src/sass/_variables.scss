@@ -1,5 +1,6 @@
 $primaryColor: #282c34;
 
+$spinnerColor: $primaryColor;
 $headerBackgroundColor: $primaryColor;
 $headerForeColor: #fff;
 $mainBackgroundColor: #fff;
@@ -7,6 +8,7 @@ $mainForeColor: $primaryColor;
 $footerBackgroundColor: $headerBackgroundColor;
 $footerForeColor: $headerForeColor;
 
+$spinnerColorAlt: #61DAFB;
 $headerBackgroundColorAlt: lighten($primaryColor, 25%);
 $headerForeColorAlt: #61DAFB;
 $mainBackgroundColorAlt: #61DAFB;
@@ -15,6 +17,7 @@ $footerBackgroundColorAlt: $headerBackgroundColorAlt;
 $footerForeColorAlt: $headerForeColorAlt;
 
 :export {
+    spinnerColor: $spinnerColor;
     headerBackgroundColor: $headerBackgroundColor;
     headerForeColor: $headerForeColor;
     mainBackgroundColor: $mainBackgroundColor;
@@ -22,6 +25,7 @@ $footerForeColorAlt: $headerForeColorAlt;
     footerBackgroundColor: $footerBackgroundColor;
     footerForeColor: $footerForeColor;
 
+    spinnerColorAlt: $spinnerColorAlt;
     headerBackgroundColorAlt: $headerBackgroundColorAlt;
     headerForeColorAlt: $headerForeColorAlt;
     mainBackgroundColorAlt: $mainBackgroundColorAlt;

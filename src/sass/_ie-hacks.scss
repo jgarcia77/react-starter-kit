@@ -1,0 +1,6 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .main__page-loading-wrapper__page-loading-container {
+        top: 50%;
+        transform: translateY(-25%);
+    }
+}
