@@ -1,0 +1,59 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+* { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+
+
+  /* ---------------------- BODY ---------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 16px;
+}
+
+
+ /* ---------------------- HEADER ---------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+
+    .app-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 100px;
+    }
+    
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+ /* ---------------------- NAVIGATION ---------------------- */
+
+
+
+  /* ---------------------- MAIN ---------------------- */
+  main {
+    padding: 1rem 0 1rem $gutter;
+  }
+
+
+   /* ---------------------- FOOTER ---------------------- */
+   footer {
+    padding: 0.5rem 0 0.5rem $gutter;
+  }
