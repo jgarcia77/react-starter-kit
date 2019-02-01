@@ -2,6 +2,7 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    height:100%;
 }
 
 /* Apply a natural box layout model to all elements */
@@ -14,14 +15,21 @@ html {
 
   /* ---------------------- BODY ---------------------- */
 body {
+    height:100%;
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
+    display: grid;
+	grid-template-areas: 
+		"header"
+		"main"
+		"footer";
 }
 
 
  /* ---------------------- HEADER ---------------------- */
 header {
+    grid-area: header;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,8 +57,14 @@ header {
 
   /* ---------------------- MAIN ---------------------- */
   main {
+    grid-area: main;
     display: block;
-    padding: 1rem 0 1rem $gutter;
+    margin: 0 $gutter $gutterdbl $gutter;
+    padding: 1rem $gutter 0 $gutter;
+
+    p {
+        padding-bottom: 15px;
+    }
   }
 
   .main__page-loading-wrapper--true {
@@ -83,6 +97,7 @@ header {
 
    /* ---------------------- FOOTER ---------------------- */
    footer {
+    grid-area: footer;
     position: fixed;
     z-index: 9999;
     width: 100%;
