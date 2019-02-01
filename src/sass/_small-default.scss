@@ -49,11 +49,43 @@ header {
 
   /* ---------------------- MAIN ---------------------- */
   main {
+    display: block;
     padding: 1rem 0 1rem $gutter;
   }
 
+  .main__page-loading-wrapper--true {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+    background: white;
+    opacity: 0.9;
+  }
+
+  .main__page-loading-wrapper--false {
+      display: none;
+  }
+
+  .main__page-loading-wrapper__page-loading-container {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        flex-grow: 0.4;
+      }
+  }
 
    /* ---------------------- FOOTER ---------------------- */
    footer {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    bottom: 0;
     padding: 0.5rem 0 0.5rem $gutter;
   }
