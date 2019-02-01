@@ -44,10 +44,10 @@ class App extends Component {
       <ThemeProvider theme={this.state.theme}>
         <PageLoading loading={this.state.loading}></PageLoading>
         <Header/>
-        <ThemeChanger
+        <Main>
+          <ThemeChanger
           onChangeTheme={this.handleThemeChange}
           themes={Object.keys(themes)}/>
-        <Main>
           <Router history={history}>
             <Routes />
           </Router>
